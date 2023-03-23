@@ -4,7 +4,6 @@
 }
 .sc-slide .swiper-wrapper{
     height: calc(100vh - 140px);
-    background: #f00;
     min-height: 450px;
 }
 .sc-slide .swiper-slide a{
@@ -68,7 +67,7 @@
 .section h2.title{ padding: 50px 16px 22px; font-size: 20px; line-height: 29px; color: #333; letter-spacing: -0.05em; font-weight: bold;text-align: center; }
 .container h3.title{padding: 50px 16px 22px; font-size: 20px; line-height: 29px; color: #333; letter-spacing: -0.05em; font-weight: bold;}
 .section .link-more{border: 1px solid #e0e0e0; background: #fff; display: block; margin: 0 38px; height: 52px; text-align: center; line-height: 52px; font-size: 15px; color: #222; font-weight: 500; margin-bottom: 65px;}
-.section .link-more::after{ content: ''; display: inline-block; vertical-align: text-bottom; padding-left: 5px; width: 19px; height: 19px; background: url(/assets/images/arrow-right.png) no-repeat; background-size: 19px auto; background-position: center; }
+.section .link-more::after{ content: ''; display: inline-block; vertical-align: text-bottom; padding-left: 5px; width: 19px; height: 19px; background: url('../images/arrow-right.png') no-repeat; background-size: 19px auto; background-position: center; }
 .container .info-box{
     padding: 15px 5% 0;
 }
@@ -112,8 +111,7 @@
     text-decoration: line-through;
 }
 /* 기본스타일 */
-.shop-list{}
-.shop-list .shop-item{}
+
 .shop-list .shop-item > a{display: block;}
 .shop-list .img-box{position: relative;}
 .shop-list .img-box img{width: 100%;}
