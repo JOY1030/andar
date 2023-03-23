@@ -1,0 +1,353 @@
+
+.sc-slide{
+    position: relative;
+}
+.sc-slide .swiper-wrapper{
+    height: calc(100vh - 140px);
+    background: #f00;
+    min-height: 450px;
+}
+.sc-slide .swiper-slide a{
+    display: block;
+    height: 100%;
+}
+.sc-slide .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sc-slide .txt-box{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    left: 40px;
+    bottom: 100px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.sc-slide .txt-box .title{
+    padding-left: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -1.3px;
+    color: #fff;
+}
+.sc-slide .txt-box .desc{
+    font-weight: 400;
+    padding-top: 15px;
+    font-size: 17px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+}
+.sc-slide .pagination{
+    z-index: 1;
+    position: absolute;
+    bottom: 37px;
+    width: 171px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sc-slide .pagination .swiper-pagination-bullet{
+    margin: 0;
+    background: #fff;
+    border-radius: 0;
+    width: 20px;
+    height: 2px;
+    opacity: 0.3;
+}
+.sc-slide .pagination .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+.sc-banner02{
+    margin-bottom: 20px;
+}
+/* 공통 */
+.section h2.title{ padding: 50px 16px 22px; font-size: 20px; line-height: 29px; color: #333; letter-spacing: -0.05em; font-weight: bold;text-align: center; }
+.container h3.title{padding: 50px 16px 22px; font-size: 20px; line-height: 29px; color: #333; letter-spacing: -0.05em; font-weight: bold;}
+.section .link-more{border: 1px solid #e0e0e0; background: #fff; display: block; margin: 0 38px; height: 52px; text-align: center; line-height: 52px; font-size: 15px; color: #222; font-weight: 500; margin-bottom: 65px;}
+.section .link-more::after{ content: ''; display: inline-block; vertical-align: text-bottom; padding-left: 5px; width: 19px; height: 19px; background: url(/assets/images/arrow-right.png) no-repeat; background-size: 19px auto; background-position: center; }
+.container .info-box{
+    padding: 15px 5% 0;
+}
+.container .info-box .review{
+    display: inline-block;
+    color: #8e1f29;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+}
+.container .info-box .title{
+    color: #333 ;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+.container .info-box .discount{
+    color: #8E1F29;
+    font-weight: 700;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.container .info-box .curr{
+    color: #333;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+.container .info-box .ori{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #8d8d8d;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+/* 기본스타일 */
+.shop-list{}
+.shop-list .shop-item{}
+.shop-list .shop-item > a{display: block;}
+.shop-list .img-box{position: relative;}
+.shop-list .img-box img{width: 100%;}
+.shop-list .img-box .badge{width: 20%; position: absolute;top: 0;right: 0; min-width: 40px;}
+
+
+
+
+/* 기본스타일-1 */
+.shop-list.list1{display: grid; grid-template-columns: repeat(2,1fr); grid-column-gap: 10px; }
+.shop-list.list1 .shop-item{ padding-bottom: 50px; }
+
+/* 기본스타일-2 */
+.shop-list.list2{ padding: 0 16px; }
+.shop-list.list2 .shop-item{ padding: 20px 0; }
+.shop-list.list2 .shop-item+.shop-item{ border-top: 1px solid #eee; }
+.shop-list.list2 .shop-item > a{ display: flex; }
+.shop-list.list2 .img-box{width: 110px;}
+.shop-list.list2 .info-box{ flex: 1; padding: 0 28px; }
+
+/* sc테마 */
+.sc-theme .front-area .title{ font-size: 26px; line-height: 35px; color: #333; letter-spacing: -0.05em; font-weight: 700; }
+.sc-theme .front-area .info-box{ padding: 20px 16px 20px; }
+.sc-theme .front-area .desc{
+    padding: 14px 0 28px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    color: #333;
+    font-weight: 400;
+}
+
+.sc-theme .front-area .btn-more{
+    position: relative;
+    display: inline-block;
+    background-color: #1e1e1e;
+    border-radius: 2px;
+    border: 1px solid #1e1e1e;
+    color: #fff;
+    padding: 8px 47px 8px 18px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    
+}
+
+.sc-theme .front-area .btn-more::after{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 10px;
+    background: url(../images/btn-more-white.png)center/contain no-repeat;
+}
+
+.group-board2 .review{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #8e1f29;
+}
+.group-board2 .board2-item{
+    border-top: 1px solid #ddd;
+}
+.group-board2 li{
+    padding: 20px 0;
+}
+.group-board2 .title{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #333;
+    font-size: 14px;
+    line-height: 17px;
+}
+.group-board2 .discount{
+    color: #8E1F29;
+    font-weight: 700;
+    margin-right: 5px;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 16px;
+}
+.group-board2 .price{
+    color: #333;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+.group-board2 .og-price{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #8d8d8d;
+    text-decoration: line-through;
+}
+
+
+.sc-story .story-wrap{
+    display: block;
+    padding: 56px 20px;
+    background-color: #C86733;
+}
+.sc-story .story-wrap h2{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    margin: 0 auto 10px;
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1.5px solid #fff;
+    padding-bottom: 5px;
+    line-height: 1.2;
+}
+.sc-story .story-wrap strong{
+    display: block;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    font-weight: 700;
+}
+.sc-story .story-wrap .desc{
+    padding: 10px 0 5px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+}
+.sc-story .story-wrap .btn-more{
+    display: inline-block;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.sc-category{
+    padding-bottom: 100px;
+}
+.sc-category .group-cate{
+    position: relative;
+}
+
+.sc-category img{
+   width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.sc-category .swiper{
+    padding: 0 20px;
+    
+}
+.sc-category .link-more{
+    position: absolute;
+    display: block;
+    top: 50px;
+    right: 7%;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+ 
+.sc-category .link-more::after{
+    position: absolute;
+    top: 4px;
+    right: -13px;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 11px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+    background: url(../images/btn-more-gr.png)center/contain no-repeat;
+    
+}
+.sc-info{
+    padding-top: 10px;
+    color: #fff;
+}
+.sc-info h2.title{
+    padding: 0;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.sc-info .desc{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 15px 0 30px;
+    box-sizing: border-box;
+}
+.sc-info span{
+    border: 1px solid #fff;
+    padding: 7px 25px 8px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    display: inline-block;
+}
+.sc-info.membership a{
+    padding: 80px 20px 74px;
+    display: block;
+    background: url(../images/banner2-1.jpg) no-repeat;
+    background-size: cover;
+    
+}
+.sc-info.store a{
+    padding: 65px 20px;
+    display: block;
+    background: url(../images/banner2-2.jpg)center/cover no-repeat;
+}
+
+
+
+
